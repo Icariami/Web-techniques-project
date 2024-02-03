@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraktale</title>
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Strona Główna</a></li>
+                <li><a href="../spirala/spirala.html">Animacja - spirala</a></li>
+                <li><a href="fraktale.html">Przykłady fraktali</a></li>
+                <li><a href="../logowanie/login.html">Logowanie</a></li>
+                <li><a href="../rejestracja/register.html">Rejestracja</a></li>
+                <li><a href="../panel/panel.html">Panel użytkownika</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="opis4">
+        <p><Strong>Trójkąt Sierpińskiego</Strong> to jeden z najprostszych fraktali. Jego konstrukcja została podana przez polskiego matematyka Wacława Sierpińskiego w 1915.
+            Tworzymy go rysując trójkąt równoboczny, łączymy środki boków trójkąta, dzieląc go na 4 trójkąty. Następnie usuwamy trójkąt środkowy i powtarzamy operację na pozostałych 3 trójkątach.</p>
+    </section>
+    <a href="https://commons.wikimedia.org/w/index.php?curid=3872598" style="margin-left: 200px;"><img src="images/sierpinski2.gif" width="33%"></a>
+    <a href="https://commons.wikimedia.org/w/index.php?curid=426892" style="margin-left: 100px;"><img src="images/sierpinski.PNG" width="40%" height="40%"></a>
+
+    <section class = "opis4">
+        <p><strong>Zbiór Mandelbrota</strong> to jeden z najbardziej rozpoznawalnych obiektów współczesnej matematyki. Nazwa tego obiektu została wprowadzona dla uhonorowania jego odkrywcy, matematyka Benoit Mandelbrota.
+            Mandelbrot spopularyzował geometrię fraktalną, cp uświadomiło społeczeństwu, że fraktale mogą przybierać kształty podobne do tych naturalnych.</p>
+            <p>Zbiorem Mandelbrota nazywamy zbiór, który oparty jest o iterację liczb zespolonych według równania:</p>
+            <p><span class="equation">z<sub>n+1</sub> = z<sub>n</sub><sup>2</sup> + p</span></p>
+            <p>gdzie <span class="equation">p</span> to liczba zespolona ze zbioru, a wartość <span class="equation">z<sub>0</sub> = 0</span>. Liczby, dla których tak zdefiniowany ciąg nie dąży do nieskończoności należą do zbioru Mandelbrota.</p>
+    </section>
+    <a href="https://commons.wikimedia.org/w/index.php?curid=321973" style="margin-left: 130px;"><img src="images/mandelbrot.jpg" width="40%" height="40%"></a>
+    <a href="https://commons.wikimedia.org/w/index.php?curid=9277589" style="margin-left: 100px;"><img src="images/Mandelbrot.gif" width="40%"></a>
+
+    <section class="opis4" padding="25px">
+        <p><strong>Zbiór Julii i zbiór Fatou </strong>to dwa komplementarne (będące swoimi dopełnieniami) zbiory zdefiniowane przez 
+            odwzorowanie będące funkcją wymierną. Nieformalnie, zbiór Fatou funkcji zawiera wartości o takiej właściwości, że w ich bliskim 
+            otoczeniu pozostałe wartości zachowują się podobnie po iterowanym przekształcaniu zadaną funkcją, natomiast w zbiorze Julii są te wartości, 
+            dla których dowolnie małe zaburzenie może powodować drastyczne zmiany w ciągu iterowanych wartości. Stąd zachowanie funkcji w zbiorze Fatou 
+            jest „regularne”, natomiast w zbiorze Julii „chaotyczne”. </p>
+        <p>Zbiór Julii - tak jak zbiór Mandelbrota, jest podzbiorem płaszczyzny zespolonej. Nazwa zbioru pochodzi od nazwiska francuskiego matematyka Gastona Julii.
+            Zbiór tworzą te punkty <span class="equation">p</span> dla których ciąg opisany rówaniem rekurencyjnym:</p>
+            <p><span class="equation">z<sub>n+1</sub> = z<sub>n</sub><sup>2</sup> + c</span></p>
+            <p>nie dąży do nieskończoności, gdzie <span class="equation">p</span> to liczba zespolona będąca parametrem zbioru,  <span class="equation">z<sub>0</sub> = p</span>. 
+            Jak widać rówanie jest bardzo podobne do równania którego używaliśmy do obliczania zbioru Mandelbrota. Jednak tym razem <span class="equation">c</span> jest stałe, a zmieniamy tylko parametr początkowy równania. 
+            Wcześniej zaczynaliśmy z <span class="equation">z<sub>0</sub> = 0</span>, a teraz jest ono równe <span class="equation">p</span>, czyli punktowi któremu chcemy sprawdzić, czy należy do zbioru.</p>
+    </section>
+    <a href="https://commons.wikimedia.org/w/index.php?curid=111840" style="margin-left: 90px;"><img src="images/julia2.jpg" width="26%"></a>
+    <a href="https://commons.wikimedia.org/w/index.php?curid=466472" ><img src="images/julia1.png" width="35%"></a>
+    <iframe width="560" height="500" src="https://www.youtube.com/embed/2bG1BvKZPlc?si=EHBqjFXy6Q3SPTGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <section class="opis4">
+        <h1 style="text-align: center;">Fraktale w naturze</h1>
+        <p>Struktury o budowie fraktalnej są również powszechnie spotykane w przyrodzie. Przykładem mogą być krystaliczne dendryty (np. płatki śniegu), systemy wodne rzek, błyskawice lub kwiaty aloesu. </p>
+    </section>
+    <a href="https://ciekawe.org/2015/11/02/fraktalne-wzory-w-przyrodzie/" style="margin-left: 70px;"><img src="images/plateksniegu.jpg" width="37%"></a>
+    <a href="https://grist.org/article/earths-most-beautiful-fractal-patterns-have-to-be-seen-to-be-believed/"><img src="images/rzeka.jpeg" width="54.3%"></a>
+    <a href="https://www.deviantart.com/joshua-j-whitworth/art/Lightning-Fractal-913239670" style="margin-left: 70px;"><img src="images/blyskawica.jpg" width="40%"></a>
+    <a href="https://mathspace.pl/matematyka/fraktalne-oblicze-natury-czyli-geometria-fraktalna-czesc-1/"><img src="images/aloes.jpg" width="53.5%"></a>
+
+
+</body>
+</html>

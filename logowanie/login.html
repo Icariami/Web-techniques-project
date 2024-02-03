@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraktale</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="login.js"></script>
+</head>
+<body class="bodylog">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Strona Główna</a></li>
+                <li><a href="../spirala/spirala.html">Animacja - spirala</a></li>
+                <li><a href="../przyklady/fraktale.html">Przykłady fraktali</a></li>
+                <li><a href="login.html">Logowanie</a></li>
+                <li><a href="../rejestracja/register.html">Rejestracja</a></li>
+                <li><a href="../panel/panel.html">Panel użytkownika</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <h1 class="logowanie">Zaloguj się</h1>
+        <section class="reginp">            
+        <table>
+            <tr><td><label for="username">Nazwa użytkownika:</label></td>
+            <td><input type="text" id="username" name="username" required></td></tr><br><br>
+
+            <tr><td><label for="password">Hasło:</label></td>
+            <td><input type="password" id="password" name="password" required></td></tr><br><br>
+        </table>
+        <button class="sub" type="button" onclick="loginUser()">Zaloguj</button>
+
+    </section>
+
+    <div id="registrationMessage"></div>
+
+    <footer>
+        <!-- Możesz umieścić stopkę tu lub zrobić osobny plik z tą zawartością -->
+    </footer>
+</body>
+</html>

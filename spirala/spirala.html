@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraktale</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        #animationNumber{
+            display: inline-block;
+            vertical-align: middle;
+            background: cornsilk;
+            border-radius: 25px;
+            box-shadow: 5px 5px 10px darkolivegreen; 
+            text-align: center;
+            font-size: 18px;
+            color: rgb(48, 65, 19);
+            height:25px;
+            width:100px;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Strona Główna</a></li>
+                <li><a href="spirala.html">Animacja - spirala</a></li>
+                <li><a href="../przyklady/fraktale.html">Przykłady fraktali</a></li>
+                <li><a href="../logowanie/login.html">Logowanie</a></li>
+                <li><a href="../rejestracja/register.html">Rejestracja</a></li>
+                <li><a href="../panel/panel.html">Panel użytkownika</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div id="aaa">
+        <section class="opis3">
+        <h1>Rysowanie spirali</h1>
+        <p>Do wygenerowania obrazu spirali, wykorzystamy miedzy innymi trzy parametry:</p>
+        <ul class = "opis_spirali">
+            <li><strong>Liczba iteracji:</strong> tyle segmentów spirali zostanie narysowanych.</li>
+            <li><strong>Kąt:</strong> kontroluje sposób rysowania każdego segmentu, determinując kierunek i nachylenie spirali</li>
+            <li><strong>Krok:</strong> Pozwala na modyfikację długości odcinków w kolejnych iteracjach</li>
+        </ul>
+                <table style="text-align: center; margin-left: 30px;">
+                    <tr><td> Liczba iteracji: </td><td><input type="number" name="iterations" id="iterations" value="170" style="width: 70px; height:25px;"></input></td></tr>
+                    <tr><td> Kąt: </td><td><input type="number" name="angle" id="angle" value="91" style="width: 70px; height:25px;"></input></td></tr>
+                    <tr><td> Krok: </td><td><input type="number" name="add" id="add" value="5" style="width: 70px; height:25px;"></input></td></tr>
+                </table>    
+                    <button class="rysuj" type="button" onclick="getParameters()" style="margin-left: 0px; margin-top: 20px; ">Rysuj</button>
+                    <button class="zapiszdane" type="button" onclick="saveData()" style="margin-left: 5px; margin-top: 20px; margin-bottom: 10px;">Zapisz dane</button></br>
+                    <div id="spiralContainer" style="display: none;"></div>
+                    <p style="margin-top: 25px; margin-bottom: 0px;">Wczytaj zapisane parametry animacji (nr wiersza z panelu użytkownika): </p>
+                    <table style="margin-left: 30px;">
+                    <tr><td><input type="number" id="animationNumber" name="animationNumber"></td>
+                    <td><button type="button" style="margin:10px;" onclick="loadSavedAnimation()">Wczytaj</button></td></tr>
+                </table>
+            </section>
+                
+        <canvas id="spiral">
+            This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+        <script src="spiral.js"></script> </section>
+    </div>
+    <footer>
+      
+    </footer>
+</body>
+</html>

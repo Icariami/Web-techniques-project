@@ -1,0 +1,332 @@
+/* style.css */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    background-color: cornsilk;
+    margin: 0;
+    padding: 0;
+    color:rgb(48, 65, 19);
+}
+
+ul li{
+    color:rgb(48, 65, 19);
+    text-align: left;
+}
+
+header {
+    background-color: darkolivegreen;
+    color: cornsilk;
+    padding: 20px 30px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px darkolivegreen;
+    margin: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width:95%;
+    font-size: 23px;
+}
+
+nav ul li a:hover
+{
+    background-color: rgba(255, 248, 220, 0.7);
+    border-radius: 40px;
+    color: darkolivegreen;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold; 
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+} 
+
+ .opis {
+    width: calc(50% - 20px); 
+    padding: 40px;
+    box-sizing: border-box; 
+}
+
+.opis2 {
+    width: 30%; 
+    padding: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen;
+    margin: 10px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 22px;
+    height: 600px;
+}
+
+.opis3 {
+    width:20%;
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen; 
+    margin: 12px;
+    text-align: center;
+    margin-top: 0px;
+    padding: 20px;
+    height:810px;
+}
+
+.opis4 {
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen; 
+    margin: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+table tr td {
+    padding: 5px;
+    padding-left:20px;
+    text-align: center;
+}
+
+table td input {
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen; 
+    text-align: center;
+    font-size: 18px;
+    color: rgb(48, 65, 19);
+}
+
+.bernsley {
+    width: 1000px; 
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen; 
+    height: 800px;
+    margin-top: 30px;
+} 
+
+.cechy {
+    list-style-type:circle; 
+    color: black; 
+}
+
+
+/* FRAKTAL BERSLEY*/
+#viewer 
+{
+    background-color: cornsilk;
+    border-radius: 4px;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* style do spirali*/
+#aaa {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.inputs {
+    width: 20%; 
+}
+
+button {
+    padding: 8px 18px; 
+    font-size: 20px;
+    background-color: darkolivegreen;
+    color: cornsilk; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer;
+}
+
+button:hover {
+    font-size: 22px;
+}
+
+#spiral {
+    width: 75%; 
+    height: 850px;
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen; 
+}
+
+.tytul {
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 35%;
+    width: fit-content;
+    font-size: 50px;
+}
+
+
+.logowanie{
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen;
+    margin: 30px;
+    margin-left: 10%;
+    text-align: center;
+    padding: 20px;
+    width:80%;
+    font-size: 50px;
+}
+
+.reginp{
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen;
+    margin-left: 10%;
+    width:80%;
+    padding-bottom: 100px;
+    text-align: center; 
+    font-size: 25px; /**/
+}
+.reginp table {
+    margin-left: 31.5%;
+    text-align: center;
+}
+
+.reginp table td input {
+    font-size: 22px;
+    padding:5px;
+}
+
+.sub {
+    margin-top:40px;
+    font-size: 23px;
+}
+
+.sub:hover {
+    font-size: 26px;
+}
+
+#registrationMessage {
+    display: none;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen;
+    margin-left: 10%;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    width:80%;
+    font-size: 22px;
+}
+
+.loginp{
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen;
+    margin-left: 10%;
+    width:40%;
+    padding-bottom: 100px;
+    text-align: center; 
+    font-size: 25px; /**/
+}
+
+.loginp table {
+    margin-left: 5%;
+    text-align: center;
+}
+
+.loginp table td input {
+    font-size: 22px;
+    padding:5px;
+}
+
+
+.brakkonta{
+    display: inline-block;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen;
+    width:40%;
+    padding:10px;
+    margin-left: 10px;
+    text-align: center; 
+    font-size: 25px; 
+}
+
+#Container {
+    display: inline-block;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen;
+    padding:10px;
+    width: 77%;
+    margin-left: 10%;
+    margin-top: 20px;
+    text-align: center; 
+    font-size:23px;
+}
+
+.wyloguj {
+    display: none;
+    margin-top: 20px;
+    margin-left:45%;
+    font-size: 22px;
+}
+
+.wyloguj:hover {
+    font-size: 24px;
+}
+
+
+
