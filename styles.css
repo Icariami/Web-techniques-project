@@ -158,13 +158,27 @@ table td input {
 }
 
 /* style do spirali*/
-#aaa {
+#animation_page {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
+    padding: 20px
 }
+
+#animationNumber{
+    display: inline-block;
+    vertical-align: middle;
+    background: cornsilk;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px darkolivegreen; 
+    text-align: center;
+    font-size: 18px;
+    color: rgb(48, 65, 19);
+    height:25px;
+    width:100px;
+    font-size: 18px;
+}s
 
 .inputs {
     width: 20%; 

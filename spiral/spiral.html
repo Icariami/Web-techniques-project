@@ -1,28 +1,13 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fraktale</title>
+    <title>Fractals</title>
     <link rel="stylesheet" href="../styles.css">
-    <style>
-        #animationNumber{
-            display: inline-block;
-            vertical-align: middle;
-            background: cornsilk;
-            border-radius: 25px;
-            box-shadow: 5px 5px 10px darkolivegreen; 
-            text-align: center;
-            font-size: 18px;
-            color: rgb(48, 65, 19);
-            height:25px;
-            width:100px;
-            font-size: 18px;
-        }
-    </style>
-
 </head>
+
 <body>
     <header>
         <nav>
@@ -38,37 +23,32 @@
         </nav>
     </header>
 
-    <div id="aaa">
+    <div id="animation_page">
         <section class="opis3">
-        <h1>Rysowanie spirali</h1>
-        <p>Do wygenerowania obrazu spirali, wykorzystamy miedzy innymi trzy parametry:</p>
-        <ul class = "opis_spirali">
-            <li><strong>Liczba iteracji:</strong> tyle segmentów spirali zostanie narysowanych.</li>
-            <li><strong>Kąt:</strong> kontroluje sposób rysowania każdego segmentu, determinując kierunek i nachylenie spirali</li>
-            <li><strong>Krok:</strong> Pozwala na modyfikację długości odcinków w kolejnych iteracjach</li>
-        </ul>
-                <table style="text-align: center; margin-left: 30px;">
-                    <tr><td> Liczba iteracji: </td><td><input type="number" name="iterations" id="iterations" value="170" style="width: 70px; height:25px;"></input></td></tr>
-                    <tr><td> Kąt: </td><td><input type="number" name="angle" id="angle" value="91" style="width: 70px; height:25px;"></input></td></tr>
-                    <tr><td> Krok: </td><td><input type="number" name="add" id="add" value="5" style="width: 70px; height:25px;"></input></td></tr>
-                </table>    
-                    <button class="rysuj" type="button" onclick="getParameters()" style="margin-left: 0px; margin-top: 20px; ">Rysuj</button>
-                    <button class="zapiszdane" type="button" onclick="saveData()" style="margin-left: 5px; margin-top: 20px; margin-bottom: 10px;">Zapisz dane</button></br>
-                    <div id="spiralContainer" style="display: none;"></div>
-                    <p style="margin-top: 25px; margin-bottom: 0px;">Wczytaj zapisane parametry animacji (nr wiersza z panelu użytkownika): </p>
-                    <table style="margin-left: 30px;">
+            <h1>Drawing a spiral</h1>
+            <p>To generate the spiral image, we'll use three parameters, including:</p>
+            <ul>
+                <li><strong>Iterations:</strong> determines the number of segments to be drawn in the spiral</li>
+                <li><strong>Angle:</strong> controls the way each segment is drawn, determining the direction and tilt of the spiral.</li>
+                <li><strong>Step:</strong> Allows modification of the segment length in each iteration.</li>
+            </ul>            
+            <table style="text-align: center; margin-left: 30px;">
+                <tr><td> Iterations: </td><td><input type="number" name="iterations" id="iterations" value="170" style="width: 70px; height:25px;"></input></td></tr>
+                <tr><td> Angle: </td><td><input type="number" name="angle" id="angle" value="91" style="width: 70px; height:25px;"></input></td></tr>
+                <tr><td> Step: </td><td><input type="number" name="add" id="add" value="5" style="width: 70px; height:25px;"></input></td></tr>
+            </table>    
+            <button type="button" onclick="getParameters()" style="margin-left: 0px; margin-top: 20px; ">Draw</button>
+            <button type="button" onclick="saveData()" style="margin-left: 5px; margin-top: 20px; margin-bottom: 10px;">Save data</button></br>
+            <div id="spiralContainer" style="display: none;"></div>
+            <p style="margin-top: 25px; margin-bottom: 0px;">Load saved animation parameters (row number from user dashboard):</p>
+                <table style="margin-left: 30px;">
                     <tr><td><input type="number" id="animationNumber" name="animationNumber"></td>
-                    <td><button type="button" style="margin:10px;" onclick="loadSavedAnimation()">Wczytaj</button></td></tr>
+                    <td><button type="button" style="margin:10px;" onclick="loadSavedAnimation()">Load</button></td></tr>
                 </table>
-            </section>
+        </section>
                 
-        <canvas id="spiral">
-            This text is displayed if your browser does not support HTML5 Canvas.
-        </canvas>
-        <script src="spiral.js"></script> </section>
+        <canvas id="spiral"></canvas>
+        <script src="spiral.js"></script>
     </div>
-    <footer>
-      
-    </footer>
 </body>
 </html>
