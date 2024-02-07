@@ -65,7 +65,7 @@ main {
     padding: 20px;
 } 
 
- .opis {
+.opis {
     width: calc(50% - 20px); 
     padding: 40px;
     box-sizing: border-box; 
@@ -137,11 +137,11 @@ table td input {
     background: cornsilk;
     border-radius: 25px;
     box-shadow: 5px 5px 10px darkolivegreen; 
-    height: 800px;
-    margin-top: 30px;
+    height: 775px;
+    margin-top: 15px;
 } 
 
-.cechy {
+.features {
     list-style-type:circle; 
     color: black; 
 }
