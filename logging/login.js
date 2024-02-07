@@ -17,13 +17,13 @@ function loginUser() {
             var response = JSON.parse(xhr.responseText);
 
             if (response.success == "ok") {
-                messageContainer.textContent = "Pomyślnie zalogowano użytkownika!";
+                messageContainer.textContent = "User successfully logged.";
                 messageContainer.style.display = "inline-block";
-            } else if (response.success == "zlehaslo"){
-                messageContainer.textContent = "Nieprawidlowe haslo";
+            } else if (response.success == "invalid_password"){
+                messageContainer.textContent = "Invalid password.";
                 messageContainer.style.display = "inline-block";
             } else {
-                messageContainer.innerHTML = "Brak użytkownika o podanej nazwie. Zarejestruj się.";
+                messageContainer.innerHTML = "No user found with the provided username. Please register.";
                 messageContainer.style.display = "inline-block";
             }
         }

@@ -16,7 +16,6 @@ if ($user->_is_logged()) {
     $filename = "../files/animation.db";
     $file_content = file_get_contents($filename);
 
-    // Szukanie linii zawierającej dane dla danego użytkownika
     $pattern = "/{$username}_(\d+)\n(.*?)(?=(\d+\n|$))/s";
     preg_match_all($pattern, $file_content, $matches, PREG_SET_ORDER);
 

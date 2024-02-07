@@ -15,10 +15,10 @@ function registerUser() {
 
             var response = JSON.parse(xhr.responseText);
             if (response.success) {
-                messageContainer.textContent = "Pomyślnie zarejestrowano użytkownika!";
+                messageContainer.textContent = "User successfully registered.";
                 messageContainer.style.display = "inline-block";
             } else {
-                messageContainer.textContent = "Podana nazwa użytkownika jest już zajęta. Wybierz inną nazwę.";
+                messageContainer.textContent = "Provided username is already taken. Please choose another name.";
                 messageContainer.style.display = "inline-block";
             }
         }   

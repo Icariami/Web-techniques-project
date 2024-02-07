@@ -61,16 +61,16 @@ function saveData() {
             try {
                 var response = JSON.parse(xhr.responseText);
                 if (response.success == true) {
-                    Container.textContent = "Zapisano dane do panelu użytkownika.";
+                    Container.textContent = "Data saved to the user dashboard.";
                     Container.style.display = "block";
                     Container.style.marginBottom = "20px";
-                } else if (response.success == "niezalogowany"){
-                    Container.textContent = "Aby zapisać dane, zaloguj się.";
+                } else if (response.success == "not_logged"){
+                    Container.textContent = "To save data, log in.";
                     Container.style.display = "block";
                                        
                 }
             } catch (e) {
-                console.error('Błąd parsowania JSON:', e);
+                console.error('Error parsing JSON:', e);
             }
             
         }
@@ -99,17 +99,17 @@ function loadSavedAnimation() {
                         document.getElementById('angle').value = loadedAnimationData[animationNumber-1].angle;
                         document.getElementById('add').value = loadedAnimationData[animationNumber-1].add;
                     } else {
-                        alert("Nie ma wiersza o podanym numerze. Wprowadź poprawny numer animacji")
+                        alert("There is no row with the given number. Please enter a valid animation number.")
                     }
                 } else {
-                    alert("Zaloguj się i zapisz dane, aby móc je wczytać.");
+                    alert("Log in and save the data to be able to load it later.");
                 }
             }
         };
         console.log("Request sent");
         xhr.send();
     } else {
-        alert("Wprowadź poprawny numer animacji");
+        alert("There is no row with the given number. Please enter a valid animation number.");
     }
 }
 

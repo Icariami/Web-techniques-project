@@ -14,9 +14,9 @@ header('Content-Type: application/json');
 
 if ($loginResult == "ok") {
     echo json_encode(array('success' => "ok"));
-} else if ($loginResult == "zlehaslo"){
-    echo json_encode(array('success' => "zlehaslo"));
+} else if ($loginResult == "invalid_password"){
+    echo json_encode(array('success' => "invalid_password"));
 }else {
-    echo json_encode(array('success' => "brak"));
+    echo json_encode(array('success' => "nope"));
 }
 ?>
