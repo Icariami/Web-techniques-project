@@ -23,43 +23,41 @@
         </nav>
     </header>
 
-    <section class="opis4">
-        <p><Strong>Trójkąt Sierpińskiego</Strong> to jeden z najprostszych fraktali. Jego konstrukcja została podana przez polskiego matematyka Wacława Sierpińskiego w 1915.
-            Tworzymy go rysując trójkąt równoboczny, łączymy środki boków trójkąta, dzieląc go na 4 trójkąty. Następnie usuwamy trójkąt środkowy i powtarzamy operację na pozostałych 3 trójkątach.</p>
+    <section class="example_description">
+        <p><strong>Sierpinski Triangle</strong> is one of the simplest fractals. Its construction was introduced by the Polish mathematician Wacław Sierpiński in 1915.
+            It is created by drawing an equilateral triangle, connecting the midpoints of its sides to form 4 smaller triangles. Then, the central triangle is removed, and the same process is repeated for the remaining 3 triangles.
+        </p>
     </section>
     <a href="https://commons.wikimedia.org/w/index.php?curid=3872598" style="margin-left: 200px;"><img src="images/sierpinski2.gif" width="33%"></a>
     <a href="https://commons.wikimedia.org/w/index.php?curid=426892" style="margin-left: 100px;"><img src="images/sierpinski.PNG" width="40%" height="40%"></a>
 
-    <section class = "opis4">
-        <p><strong>Zbiór Mandelbrota</strong> to jeden z najbardziej rozpoznawalnych obiektów współczesnej matematyki. Nazwa tego obiektu została wprowadzona dla uhonorowania jego odkrywcy, matematyka Benoit Mandelbrota.
-            Mandelbrot spopularyzował geometrię fraktalną, cp uświadomiło społeczeństwu, że fraktale mogą przybierać kształty podobne do tych naturalnych.</p>
-            <p>Zbiorem Mandelbrota nazywamy zbiór, który oparty jest o iterację liczb zespolonych według równania:</p>
-            <p><span class="equation">z<sub>n+1</sub> = z<sub>n</sub><sup>2</sup> + p</span></p>
-            <p>gdzie <span class="equation">p</span> to liczba zespolona ze zbioru, a wartość <span class="equation">z<sub>0</sub> = 0</span>. Liczby, dla których tak zdefiniowany ciąg nie dąży do nieskończoności należą do zbioru Mandelbrota.</p>
+    <section class = "example_description">
+        <p><strong>Mandelbrot Set</strong> is one of the most recognizable objects in contemporary mathematics. The name of this object was introduced to honor its discoverer, the mathematician Benoit Mandelbrot.
+            Mandelbrot popularized fractal geometry, raising awareness that fractals can take shapes similar to natural ones.</p>
+            <p>The Mandelbrot Set is defined through the iteration of complex numbers according to the equation:</p>
+            <p><span class="equation">z<sub>n+1</sub> = z<sub>n</sub><sup>2</sup> + c</span></p>
+            <p>where <span class="equation">c</span> is a complex number from the set, and the value <span class="equation">z<sub>0</sub> = 0</span>. Numbers for which the iterated sequence defined in this way does not tend to infinity belong to the Mandelbrot Set.
+        </p>
     </section>
     <a href="https://commons.wikimedia.org/w/index.php?curid=321973" style="margin-left: 130px;"><img src="images/mandelbrot.jpg" width="40%" height="40%"></a>
     <a href="https://commons.wikimedia.org/w/index.php?curid=9277589" style="margin-left: 100px;"><img src="images/Mandelbrot.gif" width="40%"></a>
 
-    <section class="opis4" padding="25px">
-        <p><strong>Zbiór Julii i zbiór Fatou </strong>to dwa komplementarne (będące swoimi dopełnieniami) zbiory zdefiniowane przez 
-            odwzorowanie będące funkcją wymierną. Nieformalnie, zbiór Fatou funkcji zawiera wartości o takiej właściwości, że w ich bliskim 
-            otoczeniu pozostałe wartości zachowują się podobnie po iterowanym przekształcaniu zadaną funkcją, natomiast w zbiorze Julii są te wartości, 
-            dla których dowolnie małe zaburzenie może powodować drastyczne zmiany w ciągu iterowanych wartości. Stąd zachowanie funkcji w zbiorze Fatou 
-            jest „regularne”, natomiast w zbiorze Julii „chaotyczne”. </p>
-        <p>Zbiór Julii - tak jak zbiór Mandelbrota, jest podzbiorem płaszczyzny zespolonej. Nazwa zbioru pochodzi od nazwiska francuskiego matematyka Gastona Julii.
-            Zbiór tworzą te punkty <span class="equation">p</span> dla których ciąg opisany rówaniem rekurencyjnym:</p>
+    <section class="example_description" padding="25px">
+        <p><strong>Julia Set and Fatou Set</strong> are two complementary sets (each other's complements) defined by a mapping that is a rational function. Informally, the Fatou set of a function contains values with the property that in their vicinity, other values behave similarly under iterated transformations by the specified function. On the other hand, in the Julia set, values are those for which any small perturbation can cause drastic changes in the sequence of iterated values. Therefore, the behavior of the function in the Fatou set is 'regular,' while in the Julia set, it is 'chaotic.'</p>
+            <p>The Julia Set, like the Mandelbrot Set, is a subset of the complex plane. The name of the set comes from the French mathematician Gaston Julia. The set is composed of those points <span class="equation">p</span> for which the sequence described by the recursive equation:</p>
             <p><span class="equation">z<sub>n+1</sub> = z<sub>n</sub><sup>2</sup> + c</span></p>
-            <p>nie dąży do nieskończoności, gdzie <span class="equation">p</span> to liczba zespolona będąca parametrem zbioru,  <span class="equation">z<sub>0</sub> = p</span>. 
-            Jak widać rówanie jest bardzo podobne do równania którego używaliśmy do obliczania zbioru Mandelbrota. Jednak tym razem <span class="equation">c</span> jest stałe, a zmieniamy tylko parametr początkowy równania. 
-            Wcześniej zaczynaliśmy z <span class="equation">z<sub>0</sub> = 0</span>, a teraz jest ono równe <span class="equation">p</span>, czyli punktowi któremu chcemy sprawdzić, czy należy do zbioru.</p>
+            <p>does not tend to infinity, where <span class="equation">c</span> is a complex number serving as the parameter of the set, and <span class="equation">z<sub>0</sub> = p</span>.
+            As you can see, the equation is very similar to the one we used to calculate the Mandelbrot set. However, this time, <span class="equation">c</span> is constant, and we only change the initial parameter of the equation.
+            Earlier, we started with <span class="equation">z<sub>0</sub> = 0</span>, and now it is equal to <span class="equation">p</span>, which is the point we want to check if it belongs to the set.
+        </p> 
     </section>
     <a href="https://commons.wikimedia.org/w/index.php?curid=111840" style="margin-left: 90px;"><img src="images/julia2.jpg" width="26%"></a>
     <a href="https://commons.wikimedia.org/w/index.php?curid=466472" ><img src="images/julia1.png" width="35%"></a>
     <iframe width="560" height="500" src="https://www.youtube.com/embed/2bG1BvKZPlc?si=EHBqjFXy6Q3SPTGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-    <section class="opis4">
-        <h1 style="text-align: center;">Fraktale w naturze</h1>
-        <p>Struktury o budowie fraktalnej są również powszechnie spotykane w przyrodzie. Przykładem mogą być krystaliczne dendryty (np. płatki śniegu), systemy wodne rzek, błyskawice lub kwiaty aloesu. </p>
+    <section class="example_description">
+        <h1 style="text-align: center;">Fractals in nature</h1>
+        <p>Structures with a fractal-like nature are also commonly encountered in nature. Examples include crystalline dendrites (e.g. snowflakes), water systems of rivers, lightning, or aloe vera flowers.</p>
     </section>
     <a href="https://ciekawe.org/2015/11/02/fraktalne-wzory-w-przyrodzie/" style="margin-left: 70px;"><img src="images/plateksniegu.jpg" width="37%"></a>
     <a href="https://grist.org/article/earths-most-beautiful-fractal-patterns-have-to-be-seen-to-be-believed/"><img src="images/rzeka.jpeg" width="54.3%"></a>
