@@ -5,7 +5,7 @@ A web application exploring fractals and animations, includes user authenticatio
 
 This project is a web application focused on the exploration of fractals and animations. The application provides users with the ability to create animations, and incorporates user authentication with a dedicated user panel to save and load animation parameters.
 
-### Features
+# Features
 
 - **Fractal Generation:** Explore a variety of fractals, including well-known ones like Sierpinski Triangle, Mandelbrot Set, and Julia Set.
 - **Animations:** Create captivating animations with the option to save and load animation parameters for a personalized experience.
@@ -14,7 +14,7 @@ This project is a web application focused on the exploration of fractals and ani
   - Save and load animation parameters for quick and convenient access.
   - Personalized user experience with saved preferences.
 
-### Technologies Used
+# Technologies Used
 
 - **Frontend:**
   - HTML, CSS, JavaScript
